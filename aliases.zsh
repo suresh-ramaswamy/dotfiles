@@ -21,7 +21,7 @@ alias sites="cd $HOME/Sites"
 
 # Git
 alias gst="git status"
-alias gd="git diff"
+alias gd="git diff -U0"
 alias gl="git log --oneline --decorate --color"
 
 # override the default ls aliases
