@@ -27,6 +27,7 @@ brew 'zsh-completions'
 # Apps
 ##cask 'aerial'
 ##cask 'alfred'
+cask 'authy'
 ##cask 'caffeine'
 ##cask 'docker'
 cask 'dropbox'

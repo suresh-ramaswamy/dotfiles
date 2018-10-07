@@ -88,6 +88,10 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Finder: show hard drive on desktop
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 
+# Save screenshots to a special directory instead of Desktop
+mkdir -p $HOME/Screenshots
+defaults write com.apple.screencapture location $HOME/Screenshots
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
