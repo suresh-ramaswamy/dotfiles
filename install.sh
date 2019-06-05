@@ -18,6 +18,7 @@ brew bundle
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Make ZSH the default shell environment
+# TODO: do this only if zsh is not the current shell!
 chsh -s $(which zsh)
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
