@@ -9,6 +9,7 @@ tap 'homebrew/bundle'
 ##brew 'awscli'
 brew 'bash' # Bash 4
 brew 'coreutils' # Those that come with macOS are outdated
+# this isn't working for some reason
 brew "emacs", args: ["with-cocoa", "with-gnutls"]
 brew 'git'
 brew 'grep'
@@ -36,6 +37,7 @@ cask 'dropbox'
 cask 'evernote'
 cask 'firefox'
 cask 'google-backup-and-sync'
+# chrome is usually pre-installed on most macs
 cask 'google-chrome'
 ##cask 'gpgtools'
 ##cask 'grammarly'
@@ -52,7 +54,8 @@ cask 'rescuetime'
 ##cask 'sequel-pro'
 cask 'spectacle'
 ##cask 'shuttle'
-cask 'slack'
+# slack is usually pre-installed on most macs
+# cask 'slack'
 cask 'sublime-text'
 ##cask 'torbrowser'
 ##cask 'tower'
