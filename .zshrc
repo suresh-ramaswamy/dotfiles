@@ -33,7 +33,7 @@ ZSH_THEME="taybalt-custom"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -73,3 +73,9 @@ export LANG=en_US.UTF-8
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Initialize python env (if it exists)
+if command -v pyenv 1>/dev/null 2>&1;
+then
+    eval "$(pyenv init -)"
+fi
