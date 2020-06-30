@@ -10,7 +10,7 @@ REM # checksum error
 choco install google-backup-and-sync -y --ignore-checksums
 
 REM #### utils
-choco install sysinternals autohotkey.portable autoruns sharpkeys launchy windirstat winmerge pdftk -y
+choco install sysinternals autohotkey.portable autoruns sharpkeys launchy windirstat winmerge pdftk 7zip -y
 
 REM #### programming
 choco install -y python3 curl git putty
