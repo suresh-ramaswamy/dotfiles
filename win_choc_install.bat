@@ -16,12 +16,10 @@ REM #### programming
 choco install -y python3 curl git putty
 
 REM #### file editors/viewers
-choco install adobereader notepad++ -y
+choco install adobereader notepad++ vscode -y
 
 REM #### media player
 choco install vlc -y
 
 REM #### conf software
 choco install zoom skype -y
-
-
