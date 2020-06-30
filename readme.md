@@ -17,3 +17,16 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 1. Wait for the Dropbox and Google Drive sync to complete
 1. Restore preferences by running `mackup restore`
 1. Restart your computer to finalize the process
+
+## A Fresh Windows setup
+
+1. Upgrade to latest OS
+1. Set HOME environment variable to Windows user directory (usually c:\Users\<short name>)
+1. Install chocolatey (https://chocolatey.org/docs/installation). Read instructions on setting up Windows PowerShell permissions.
+1. Install git using chocolatey.
+1. mkdir %HOME%\repo
+1. cd %HOME%\repo
+1. git clone git://github.com/suresh-ramaswamy/dotfiles
+1. run win_choc_install.bat in PowerShell.
+1. Configure local directory for Google drive to %HOME%\GDrive
+1. Create symlinks for .emacs and emacs to  %HOME%\GDrive\Mackup
