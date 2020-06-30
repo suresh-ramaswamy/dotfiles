@@ -20,23 +20,17 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 
 ## A Fresh Windows setup
 
-1. Upgrade to latest OS
+1. Upgrade to latest Windows 10
 1. Open a powershell terminal
-1. Install chocolatey (https://chocolatey.org/docs/installation). Read instructions on setting up Windows PowerShell permissions.
-1. Install git using chocolatey.
+1. Install [chocolatey](https://chocolatey.org/docs/installation). Read instructions on setting up Windows PowerShell permissions
+1. Install git using chocolatey
 1. Set HOME environment variable to Windows user directory (usually c:\Users\<short name>)
 1. mkdir $HOME\repo
 1. cd $HOME\repo
 1. git clone git://github.com/suresh-ramaswamy/dotfiles
-1. run win_choc_install.bat in PowerShell.
+1. run win_choc_install.bat in PowerShell
 1. Configure local directory for Google drive to $HOME\GDrive
-1. Create symlinks for .emacs and emacs
-
-        cmd /c mklink c:\Users\<user>\.emacs $HOME\GDrive\Suresh\Mackup\.emacs
-        cmd /c mklink /d c:\Users\<user>\emacs $HOME\GDrive\Suresh\Mackup\emacs
-
+1. Create symlink for .emacs: `cmd /c mklink c:\Users\<user>\.emacs $HOME\GDrive\Suresh\Mackup\.emacs`
+1. Create symlink for emacs: `cmd /c mklink /d c:\Users\<user>\emacs $HOME\GDrive\Suresh\Mackup\emacs`
 1. Install Ubuntu using Windows Subsystem for Linux (WSL). See https://docs.microsoft.com/en-us/windows/wsl/install-win10
-1. Login into Ubuntu app
-
-        sudo apt-get update
-
+1. Login into Ubuntu app and update apt: `sudo apt-get update`
