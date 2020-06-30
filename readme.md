@@ -31,8 +31,8 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 1. run win_choc_install.bat in PowerShell.
 1. Configure local directory for Google drive to $HOME\GDrive
 1. Create symlinks for .emacs and emacs
-    cmd /c mklink c:\Users\<user>\.emacs $HOME\GDrive\Suresh\Mackup\.emacs
-    cmd /c mklink /d c:\Users\<user>\emacs $HOME\GDrive\Suresh\Mackup\emacs
+        cmd /c mklink c:\Users\<user>\.emacs $HOME\GDrive\Suresh\Mackup\.emacs
+        cmd /c mklink /d c:\Users\<user>\emacs $HOME\GDrive\Suresh\Mackup\emacs
 1. Install Ubuntu using Windows Subsystem for Linux (WSL). See https://docs.microsoft.com/en-us/windows/wsl/install-win10
 1. Login into Ubuntu app
-    sudo apt-get update
+        sudo apt-get update
