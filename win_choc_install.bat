@@ -5,22 +5,22 @@ REM         See https://chocolatey.org/install for information on installing cho
 REM
 
 REM ### backup/sync
-choco install dropbox evernote -y
+choco install -y dropbox evernote
 
 REM # checksum error
 choco install google-backup-and-sync -y --ignore-checksums
 
 REM #### utils
-choco install sysinternals autohotkey.portable autoruns sharpkeys launchy windirstat winmerge pdftk 7zip ditto -y
+choco install -y sysinternals autohotkey.portable autoruns sharpkeys launchy windirstat winmerge pdftk 7zip ditto
 
 REM #### programming
 choco install -y python3 curl git putty
 
 REM #### file editors/viewers
-choco install adobereader notepad++ vscode -y
+choco install -y adobereader notepad++ vscode
 
 REM #### media player
-choco install vlc -y
+choco install -y vlc
 
 REM #### conf software
-choco install zoom skype -y
+choco install -y zoom skype
