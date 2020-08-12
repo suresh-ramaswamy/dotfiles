@@ -14,10 +14,10 @@ REM #### utils
 choco install -y sysinternals autohotkey.portable autoruns sharpkeys launchy windirstat winmerge pdftk 7zip ditto
 
 REM #### programming
-choco install -y python3 curl git putty
+choco install -y python3 curl git putty github-desktop
 
 REM #### file editors/viewers
-choco install -y adobereader notepad++ vscode
+choco install -y adobereader notepadplusplus vscode
 
 REM #### media player
 choco install -y vlc
