@@ -7,8 +7,8 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 1. Upgrade to latest OS
 1. Install xcode and open it to accept the T&C
 1. Open Terminal
-1. mkdir $HOME/Projects
-1. cd $HOME/Projects
+1. mkdir $HOME/repo
+1. cd $HOME/repo
 1. git clone git://github.com/suresh-ramaswamy/dotfiles
 1. cd $HOME/Projects/dotfiles
 1. ln -s $HOME/Projects/dotfiles $HOME/.dotfiles
