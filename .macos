@@ -47,8 +47,11 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disable 2-finger swipe navigation globally
+defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool FALSE
 # Disable 2-finger swipe navigation in Chrome
-defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+#defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
 
 ###############################################################################
 # Screen                                                                      #
@@ -89,8 +92,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 
 # Save screenshots to a special directory instead of Desktop
-mkdir -p $HOME/Screenshots
-defaults write com.apple.screencapture location $HOME/Screenshots
+mkdir -p $HOME/Downloads/Screenshots
+defaults write com.apple.screencapture location $HOME/Downloads/Screenshots
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
