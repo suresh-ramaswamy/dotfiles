@@ -1,8 +1,8 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/eid'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
+tap 'homebrew/cask'
+tap 'homebrew/eid'
+tap 'homebrew/fonts'
+tap 'homebrew/versions'
 tap 'homebrew/bundle'
 
 # Install Binaries
@@ -11,6 +11,7 @@ brew 'bash' # Bash 4
 brew 'coreutils' # Those that come with macOS are outdated
 # this isn't working for some reason
 #brew "emacs", args: ["with-cocoa", "with-gnutls"]
+tap 'd12frosted/emacs-plus'  
 brew 'emacs-plus'
 brew 'fish'
 brew 'git'
