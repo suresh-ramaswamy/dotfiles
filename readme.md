@@ -5,6 +5,7 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 ## A Fresh macOS Setup
 
 1. Upgrade to latest OS
+1. In System Preferences, change Caps Lock key to Control
 1. Install xcode and open it to accept the T&C
 1. Open Terminal
 1. mkdir $HOME/repo
