@@ -1,8 +1,6 @@
 # Taps
 tap 'homebrew/cask'
-tap 'homebrew/eid'
-tap 'homebrew/fonts'
-tap 'homebrew/versions'
+tap 'homebrew/homebrew-core'
 tap 'homebrew/bundle'
 
 # Install Binaries
@@ -87,10 +85,11 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # Fonts
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+##tap 'homebrew/fonts'
+##cask 'font-source-code-pro-for-powerline'
+##cask 'font-source-code-pro'
+##cask 'font-source-sans-pro'
+##cask 'font-source-serif-pro'
 
 # Install Mac App Store apps (not working!! Error: Redownload Unavailable with This Apple ID)
 ##mas '1Password', id: 1333542190
