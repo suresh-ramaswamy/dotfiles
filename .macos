@@ -12,8 +12,14 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set sidebar icon size to medium
+# System Preferences > General > Sidebar icon size: Medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+
+# System Preferences > General > Appearance
+defaults write -globalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
+
+# Always show scrollbars
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
@@ -37,9 +43,13 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
+
+# System Preferences > Trackpad > Tap to click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -71,6 +81,9 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
+# Finder > Preferences > Advanced > Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
@@ -95,9 +108,13 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 mkdir -p $HOME/Downloads/Screenshots
 defaults write com.apple.screencapture location $HOME/Downloads/Screenshots
 
+
 ###############################################################################
-# Dock, Dashboard, and hot corners                                            #
+# Dock: # System Preferences > Dock
 ###############################################################################
+
+# Position on screen
+defaults write com.apple.dock orientation left
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -188,12 +205,9 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-    "Dock" "Finder" "Mail" "Messages" "Photos" "Safari" "SystemUIServer" \
-    "Terminal" "Tweetbot" "iCal"; do
+for app in "Activity Monitor" "Dock" "Finder" "Safari" "SystemUIServer" "Terminal"
+do
     killall "${app}" &> /dev/null
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
-
