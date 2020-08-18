@@ -14,9 +14,10 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 1. cd $HOME/repo/dotfiles
 1. ln -s $HOME/repo/dotfiles $HOME/.dotfiles
 1. Run $HOME/.dotfiles/install.sh
-1. Run Google Backup & Sync app and login with personal account
+1. Run Google Backup & Sync app, login with personal account, and configure local directory to be $HOME/GDrive
 1. Wait for Google Drive sync to complete
 1. Restore preferences by running `mackup restore`
+1. ln -s $HOME/GDrive/Mackup/emacs $HOME/emacs
 1. Restart your computer to finalize the process
 
 ## A Fresh Windows setup
