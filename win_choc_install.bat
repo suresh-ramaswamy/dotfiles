@@ -17,7 +17,7 @@ REM #### programming
 choco install -y python3 curl git putty github-desktop
 
 REM #### file editors/viewers
-choco install -y adobereader notepadplusplus vscode
+choco install -y adobereader notepadplusplus vscode foxitreader
 
 REM #### media player
 choco install -y vlc
