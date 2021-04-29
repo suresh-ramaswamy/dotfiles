@@ -114,7 +114,7 @@ defaults write com.apple.screencapture location $HOME/Downloads/Screenshots
 ###############################################################################
 
 # Position on screen
-defaults write com.apple.dock orientation left
+defaults write com.apple.dock orientation bottom
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true

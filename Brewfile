@@ -7,10 +7,6 @@ tap 'homebrew/bundle'
 brew 'awscli'
 brew 'bash' # Bash 4
 brew 'coreutils' # Those that come with macOS are outdated
-# this isn't working for some reason
-#brew "emacs", args: ["with-cocoa", "with-gnutls"]
-tap 'd12frosted/emacs-plus'  
-brew 'emacs-plus'
 brew 'fish'
 brew 'git'
 brew 'grep'
@@ -35,46 +31,38 @@ brew 'python3'
 ##cask 'alfred'
 cask 'anki'
 cask 'authy'
+cask 'bitwarden'
 cask 'brave-browser'
 cask 'clipy'
-##cask 'caffeine'
+cask 'caffeine'
 cask 'docker'
-cask 'dropbox'
-##cask 'eid-be'
-##cask 'eid-be-viewer'
+##cask 'dropbox'             # not allowed at Google
+cask 'emacs'
 cask 'evernote'
 ##cask 'firefox'
 cask 'google-backup-and-sync'
-cask 'google-chrome'
-##cask 'gimp'
-##cask 'gpgtools'
-##cask 'grammarly'
+##cask 'google-chrome'        # don't need this at Google
 ##cask 'insomnia'
 cask 'iterm2'
 ##cask 'java'
-cask 'lastpass'
-##cask 'mysqlworkbench'
 ##cask ngrok
-##cask 'now'
-##cask 'phpstorm'
 cask 'postman'
 cask 'quicksilver'
-##cask 'quip'
+cask 'rectangle'
 cask 'rescuetime'
 ##cask 'sequel-pro'
-cask 'spectacle'
 ##cask 'shuttle'
 cask 'slack'
 cask 'sublime-text'
 ##cask 'torbrowser'
 ##cask 'tower'
 ##cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox'
+##cask 'vagrant'
+##cask 'virtualbox'
 ##cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vlc'
-cask 'zoom'
+# cask 'zoom'                   # not allowed at Google
 
 # Quicklook
 cask 'qlcolorcode'
@@ -83,21 +71,3 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 
-# Fonts
-##tap 'homebrew/fonts'
-##cask 'font-source-code-pro-for-powerline'
-##cask 'font-source-code-pro'
-##cask 'font-source-sans-pro'
-##cask 'font-source-serif-pro'
-
-# Install Mac App Store apps (not working!! Error: Redownload Unavailable with This Apple ID)
-##mas '1Password', id: 1333542190
-##mas 'Byword', id: 420212497
-##mas 'Deckset', id: 847496013
-##mas 'Giphy Capture', id: 668208984
-##mas 'Sip', id: 507257563
-##mas 'Spark', id: 1176895641
-##mas 'The Unarchiver', id: 425424353
-##mas 'Things', id: 904280696
-##mas 'Tweetbot', id: 1384080005
-##mas 'WhatsApp', id: 1147396723 

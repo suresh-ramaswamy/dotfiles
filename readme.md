@@ -5,7 +5,7 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 ## A Fresh macOS Setup
 
 1. Upgrade to latest OS
-1. In System Preferences, change Caps Lock key to Control
+1. In System Preferences -> Keyboard -> Modifier Keys..., change "Caps Lock" key to "Control"
 1. Install xcode and open it to accept the T&C
 1. Open Terminal
 1. mkdir $HOME/repo
@@ -17,7 +17,7 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 1. Run Google Backup & Sync app, login with personal account, and configure local directory to be $HOME/GDrive
 1. Wait for Google Drive sync to complete
 1. Restore preferences by running `mackup restore`
-1. ln -s $HOME/GDrive/Mackup/emacs $HOME/emacs
+1. ln -s $HOME/GDrive/Suresh/Mackup/emacs $HOME/emacs
 1. Restart your computer to finalize the process
 
 ## A Fresh Windows setup
