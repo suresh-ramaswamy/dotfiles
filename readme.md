@@ -18,6 +18,7 @@ This is a clone of https://github.com/driesvints/dotfiles simplified quite a bit
 1. Wait for Google Drive sync to complete
 1. Restore preferences by running `mackup restore`
 1. ln -s $HOME/GDrive/Suresh/Mackup/emacs $HOME/emacs
+1. Update iTerm2 "Advanced Preferences" and set "Scroll wheel sends arrow keys when in alt screen mode" in the Mouse section to No.
 1. Restart your computer to finalize the process
 
 ## A Fresh Windows setup
