@@ -62,15 +62,6 @@ defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool FALSE
 # Disable 2-finger swipe navigation in Chrome
 #defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
 
-
-###############################################################################
-# Screen                                                                      #
-###############################################################################
-
-# Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 600
-
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -118,6 +109,9 @@ defaults write com.apple.dock orientation left
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
+
+# Show the cmd-tab app switcher icons on all displays
+defaults write com.apple.Dock appswitcher-all-displays -bool true
 
 # Magnify icons on hover in the dock
 defaults write com.apple.dock magnification -bool true
